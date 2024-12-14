@@ -18,7 +18,20 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'dyna_client'
+
+json_path = './example.json' (that json file already should have any endpoint which need to create)
+a = DynaClient::Api.new(json_path)
+
+a.get_google
+# => return faraday's response
+
+params  = {a: 'foo', b: 'bar', c: 'buzz'}
+headers = { { 'User-Agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0' } }
+a.post_yandex(params, headers)
+# => return faraday's response
+```
 
 ## Development
 

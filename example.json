@@ -1,0 +1,21 @@
+{
+  "google": {
+          "name":   "get_google",
+          "method": "GET",
+          "url":    "https://google.com"
+        },
+  "yandex": [
+      {
+          "name":   "post_yandex",
+          "method": "POST",
+          "url":    "https://yandex.ru"
+      }
+  ],
+  "duckduckgo": [
+      {
+          "name":   "get_duckduckgo",
+          "method": "GET",
+          "url":    "https://duckduckgo.com"
+      }
+  ]
+}
